@@ -5,12 +5,217 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Page title</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <script type="module" src="./index.js"></script>
+    <!-- <script type="module" src="./index.js"></script> -->
 </head>
 
 <body>
 
+
+    <header class="header">
+        <div class="container">
+            <div class="header__container header__section">
+                <a class="logo" href="./index.html">
+                    <img src="./images/header/header_logo.svg" alt="photo of the header icon" width="64" height="30" />
+                    <!-- <svg width="40" height="40">
+                        <use href="./images/icons.svg#icon-header"></use>
+                    </svg> -->
+                </a>
+                <div class="header__user__info">
+                    <p class="header__user__info-text">AB</p>
+                </div>
+
+            </div>
+        </div>
+
+    </header>
+    <main>
+        <section class="welcome">
+            <h1 class="welcome__title">Welcome ipsum dolor sit amet, consectetur adipiscing elit!</h1>
+        </section>
+
+
+
+
+        <section class="card-section">
+            <div class="container">
+                <ul class="card-list list">
+                    <li class="card-item">
+                        <div>
+                            <img src="./images/card/card_img1.svg" alt="header top image" width="368px" />
+                            <div class="card-header__position">
+                                <div class="card-header__container">
+                                    <img class="card-header__img" src="./images/card/card_icon1.svg"
+                                        alt="photo icons cube" />
+                                    <span class="card-list__title">Lorem ipsum dolor</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-border">
+                            <h2 class="card-border__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                                sed
+                                do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat.</h2>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="card-divider__container">
+                                <p class="card-footer__text">Current Plan</p>
+                                <div class="card-footer__divider"></div>
+                            </div>
+
+                            <p>Enterprise</p>
+                            <div class="card-btn__container">
+                                <button class="card-btn__start">
+                                    Get Started
+                                </button>
+                                <button class="card-btn__compare">
+                                    Compare plans
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="card-btn__divider"></div>
+                    </li>
+
+                    <li class="card-item">
+                        <div>
+                            <img src="./images/card/card_img2.svg" alt="header top image" width="368px" />
+                            <div class="card-header__position">
+                                <div class="card-header__container">
+                                    <img class="card-header__img" src="./images/card/card_icon2.svg"
+                                        alt="photo icons target" />
+                                    <span class="card-list__title">Lorem ipsum</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-border">
+                            <h2 class="card-border__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur.</h2>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="card-divider__container">
+                                <p class="card-footer__text">Current Plan</p>
+                                <div class="card-footer__divider"></div>
+                            </div>
+
+                            <p>Enterprise</p>
+                            <div class="card-btn__container">
+                                <button class="card-btn__start">
+                                    Get Started
+                                </button>
+                                <button class="card-btn__compare">
+                                    Compare plans
+                                </button>
+                            </div>
+
+                        </div>
+                        <div class="card-btn__divider"></div>
+                    </li>
+
+                    <li class="card-item">
+                        <div>
+                            <img src="./images/card/card_img3.svg" alt="header top image" width="368px" />
+                            <div class="card-header__position">
+                                <div class="card-header__container">
+                                    <img class="card-header__img" src="./images/card/card_icon3.svg"
+                                        alt="photo icons target" />
+                                    <span class="card-list__title">Lorem</span>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="card-border">
+                            <h2 class="card-border__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do eiusmod tempor incididunt ut labore et dolore magna
+                                aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+                                aliquip ex ea commodo consequat. Duis
+                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                                pariatur. Excepteur sint
+                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+                                laborum.</h2>
+                        </div>
+
+                        <div class="card-footer">
+                            <div class="card-divider__container">
+                                <p class="card-footer__text">Current Plan</p>
+                                <div class="card-footer__divider"></div>
+                            </div>
+
+                            <p>Enterprise</p>
+                            <div class="card-btn__container">
+                                <!-- <button class="btn btn-open">Open Modal</button> -->
+                                <button class="card-btn__start">
+                                    Get Started
+                                </button>
+                                <a class="card-btn__link" href="#">
+                                    <button class="card-btn__compare">
+                                        Compare plans
+                                    </button>
+                                </a>
+                            </div>
+
+                        </div>
+                        <div class="card-btn__divider"></div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-container">
+            <a href="#" class="footer-container__link">
+                <p class="footer-container__text">Join Discord</p>
+            </a>
+            <div class="footer-line"></div>
+            <a href="#" class="footer-container__link">
+                <p class="footer-container__text">Contact Us</p>
+            </a>
+        </div>
+    </footer>
+
+
+    <div id="simpleModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <span class="closeBtn">&times;</span>
+                <h2>Please Read!</h2>
+            </div>
+            <div class="modal-body">
+                <p>Concerning Online Orders:</p>
+                <p>
+                    Dino's Pizza Company in Blue Mound, TX Online ordering system is for <em>CARRY OUT ONLY</em> at this
+                    time.
+                    If you would like to order DELIVERY, please contact the store at 817 232- 2244.
+                <p>PLEASE NOTE: You are ordering for CARRY OUT at our ONLY location:
+                    1600 GILL STREET
+                    BLUE MOUND, TX 76131
+                    <br>Thank you for your business!
+                </p>
+                <a data-glf-cuid="06a81907-5b80-4290-9392-2c3b0b166ca8"
+                    data-glf-ruid="d4d87ac8-e97e-4fcf-a1bb-c8611f57c680"><button class="button">Continue to
+                        Order</button></a>
+            </div>
+            <div class="modal-footer">
+
+            </div>
+        </div>
+    </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>

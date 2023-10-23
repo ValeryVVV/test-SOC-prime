@@ -1,0 +1,38 @@
+.header {
+  border-bottom: 1px solid #3d3b4f;
+  background-color: var(--header-background-color);
+
+  @media screen and (max-width: 767px) {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    width: 100%;
+  }
+}
+
+.header__container {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 12px;
+
+  @media screen and (max-width: 767px) {
+    max-width: 767px;
+  }
+}
+
+.header__user__info {
+  border: 1px solid var(--accent-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+.header__user__info-text {
+  padding: 7px;
+  font-family: $mainFont;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.gradient {
+  background: linear-gradient(#e66465, #9198e5);
+}
