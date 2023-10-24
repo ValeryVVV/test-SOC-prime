@@ -44,14 +44,15 @@
 
         <section class="card-section">
             <div class="container">
-                <ul class="card-list list">
+                <ul class="card-list list" id="active-card">
                     <li class="card-item">
-                        <div>
+                        <div class="wrapper">
                             <img src="./images/card/card_img1.svg" alt="header top image" width="368px" />
                             <div class="card-header__position">
                                 <div class="card-header__container">
-                                    <img class="card-header__img" src="./images/card/card_icon1.svg"
-                                        alt="photo icons cube" />
+                                    <svg class="card-header__img" width="80" height="80">
+                                        <use href="./images/icons/symbol-defs.svg#icon-card_icon1"></use>
+                                    </svg>
                                     <span class="card-list__title">Lorem ipsum dolor</span>
                                 </div>
                             </div>
@@ -90,8 +91,9 @@
                             <img src="./images/card/card_img2.svg" alt="header top image" width="368px" />
                             <div class="card-header__position">
                                 <div class="card-header__container">
-                                    <img class="card-header__img" src="./images/card/card_icon2.svg"
-                                        alt="photo icons target" />
+                                    <svg class="card-header__img" width="80" height="80">
+                                        <use href="./images/icons/symbol-defs.svg#icon-card_icon2"></use>
+                                    </svg>
                                     <span class="card-list__title">Lorem ipsum</span>
                                 </div>
                             </div>
@@ -101,9 +103,7 @@
                             <h2 class="card-border__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                 do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur.</h2>
+                                aliquip ex ea commodo consequat.</h2>
                         </div>
 
                         <div class="card-footer">
@@ -131,8 +131,9 @@
                             <img src="./images/card/card_img3.svg" alt="header top image" width="368px" />
                             <div class="card-header__position">
                                 <div class="card-header__container">
-                                    <img class="card-header__img" src="./images/card/card_icon3.svg"
-                                        alt="photo icons target" />
+                                    <svg class="card-header__img" width="90" height="90">
+                                        <use href="./images/icons/symbol-defs.svg#icon-card_icon3"></use>
+                                    </svg>
                                     <span class="card-list__title">Lorem</span>
                                 </div>
                             </div>
@@ -142,11 +143,7 @@
                             <h2 class="card-border__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
                                 do eiusmod tempor incididunt ut labore et dolore magna
                                 aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                                aliquip ex ea commodo consequat. Duis
-                                aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                                pariatur. Excepteur sint
-                                occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                                laborum.</h2>
+                                aliquip ex ea commodo consequat.</h2>
                         </div>
 
                         <div class="card-footer">
@@ -157,7 +154,6 @@
 
                             <p>Enterprise</p>
                             <div class="card-btn__container">
-                                <!-- <button class="btn btn-open">Open Modal</button> -->
                                 <button class="card-btn__start">
                                     Get Started
                                 </button>
@@ -187,35 +183,32 @@
             </a>
         </div>
     </footer>
-
-
-    <div id="simpleModal" class="modal">
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal content -->
         <div class="modal-content">
-            <div class="modal-header">
-                <span class="closeBtn">&times;</span>
-                <h2>Please Read!</h2>
-            </div>
-            <div class="modal-body">
-                <p>Concerning Online Orders:</p>
-                <p>
-                    Dino's Pizza Company in Blue Mound, TX Online ordering system is for <em>CARRY OUT ONLY</em> at this
-                    time.
-                    If you would like to order DELIVERY, please contact the store at 817 232- 2244.
-                <p>PLEASE NOTE: You are ordering for CARRY OUT at our ONLY location:
-                    1600 GILL STREET
-                    BLUE MOUND, TX 76131
-                    <br>Thank you for your business!
-                </p>
-                <a data-glf-cuid="06a81907-5b80-4290-9392-2c3b0b166ca8"
-                    data-glf-ruid="d4d87ac8-e97e-4fcf-a1bb-c8611f57c680"><button class="button">Continue to
-                        Order</button></a>
-            </div>
-            <div class="modal-footer">
+            <div class="modal-content__header">
+                <h1 class="modal-content__title">Get Started</h1>
+                <span class="close">x</span>
+                <p class="modal-content__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                    tempor incididunt ut labore
+                    et dolore magna
+                    aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                    commodo consequat.</p>
 
+                <div class="modal-btn__container">
+                    <button class="modal-btn__start">
+                        Get Started
+                    </button>
+                    <button class="modal-btn__cancel">
+                        Cancel
+                    </button>
+                </div>
             </div>
         </div>
+
     </div>
-    <script src="./js/modal.js"></script>
+    <script type="module" src="./js/modal.js"></script>
 </body>
 
 </html>

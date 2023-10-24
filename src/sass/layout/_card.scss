@@ -24,6 +24,7 @@ img {
   grid-template-columns: auto;
   gap: 30px 30px;
   align-items: stretch;
+  position: relative;
 
   @media screen and (min-width: 480px) {
     grid-template-columns: auto;
@@ -37,11 +38,11 @@ img {
 }
 
 .card-item {
-  border: 2px solid #335955;
+  border: 1px solid #335955;
   border-top-left-radius: 40px;
-  border-bottom-right-radius: 40px;
-
+  // border-bottom-right-radius: 40px;
   max-width: 372px;
+
   &:hover,
   &:focus {
     border-color: var(--green-color);
@@ -51,6 +52,11 @@ img {
   @media screen and (max-width: 479px) {
     max-width: 300px;
   }
+}
+
+.active,
+.card-item :hover {
+  border-color: var(--green-color);
 }
 
 .card-border {
@@ -85,6 +91,7 @@ img {
 }
 
 .card-header__img {
+  fill: #00a650;
   &:hover,
   &:focus {
     fill: red;
