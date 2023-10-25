@@ -2,14 +2,14 @@
   padding-left: 30px;
   padding-right: 30px;
 
-  @media screen and (min-width: 1200px) {
-    padding-top: 40px;
-    padding-bottom: 40px;
+  @media screen and (min-width: 374px) and (max-width: 1199px) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
-  @media screen and (max-width: 479px) {
-    padding-left: 60px;
-    padding-right: 30px;
+  @media screen and (min-width: 1200px) and (max-width: 1900px) {
+    margin-top: 60px;
+    margin-bottom: 60px;
   }
 }
 
@@ -40,7 +40,6 @@ img {
 .card-item {
   border: 1px solid #335955;
   border-top-left-radius: 40px;
-  // border-bottom-right-radius: 40px;
   max-width: 372px;
 
   &:hover,

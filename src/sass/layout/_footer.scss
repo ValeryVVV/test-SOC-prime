@@ -3,12 +3,28 @@
   justify-content: center;
   align-items: center;
   gap: 10px;
-  padding-bottom: 30px;
+  position: sticky;
+  left: 0px;
+  bottom: 0px;
+  height: 30px;
+  width: 100%;
+  margin-top: 40px;
+
+  @media screen and (min-width: 768px) {
+    position: sticky;
+    left: 0px;
+    bottom: 0px;
+    height: 30px;
+    width: 100%;
+    margin-top: 40px;
+  }
 }
 
 .footer-line {
   border-left: 2px solid var(--vertical-line-color);
   height: 40px;
+  margin-bottom: 10px;
+  padding-top: 10px;
 }
 
 .footer-container__link {

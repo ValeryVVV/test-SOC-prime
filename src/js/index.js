@@ -6,25 +6,26 @@ refs = {
   closeBtn: document.getElementsByClassName('close')[0],
   cancelModalBtn: document.querySelector('.modal-btn__cancel'),
   modalStartBtn: document.querySelector('.modal-btn__start'),
-  compareCardBtn: document.getElementsByClassName('card-btn__compare')[0],
+  compareModalBtn: document.querySelectorAll('.card-btn__compare'),
 };
 
-// refs.compareCardBtn.addEventListener('click', () => {
-//   if (classList.contains('card-btn__compare')) {
-//     refs.modal.style.display = 'none';
-//   }
-// });
+refs.compareModalBtn.forEach(function (e) {
+  e.addEventListener('click', event => {
+    event.stopPropagation();
+  });
+});
 
-let header = document.getElementById('active-card');
+let header = document.querySelector('.active-card');
 let btns = header.getElementsByClassName('card-item');
+
 for (let i = 0; i < btns.length; i++) {
   btns[i].addEventListener('click', function () {
     let current = document.getElementsByClassName('active');
     if (current.length > 0) {
       current[0].className = current[0].className.replace(' active', '');
     }
-    this.className += ' active';
 
+    this.className += ' active';
     openModal();
   });
 }
@@ -47,7 +48,7 @@ refs.modalStartBtn.addEventListener('click', async () => {
       headers: {
         'Content-type': 'application/json',
       },
-    });
+    }).then(response => response.json());
 
     Notify.success('Click On Get Started Button From Modal', response);
     console.log('Click On Get Started Button From Modal', response);
@@ -68,10 +69,10 @@ async function closeModal() {
   refs.modal.style.display = 'none';
 
   try {
-    const response = await fetch('https://jsonplaceholder.typicode.com/todos', {
+    const response = await fetch('https://reqres.in/api/articles', {
       method: 'POST',
       body: JSON.stringify({
-        message: 'Click On Close Button From Modal Error',
+        message: 'Click On Close Button From Modal',
       }),
       headers: {
         'Content-type': 'application/json',

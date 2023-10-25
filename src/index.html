@@ -4,27 +4,22 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Page title</title>
+    <title>SOC Prime</title>
+    <link rel="icon" href="./images/header/header_logo.svg" type="image/x-icon" />
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
         rel="stylesheet" />
     <link rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" />
     <link rel="stylesheet" href="./sass/index.scss" />
-    <!-- <script type="module" src="./index.js"></script> -->
 </head>
 
 <body>
-
-
     <header class="header">
         <div class="container">
             <div class="header__container header__section">
                 <a class="logo" href="./index.html">
                     <img src="./images/header/header_logo.svg" alt="photo of the header icon" width="64" height="30" />
-                    <!-- <svg width="40" height="40">
-                        <use href="./images/icons.svg#icon-header"></use>
-                    </svg> -->
                 </a>
                 <div class="header__user__info">
                     <p class="header__user__info-text">AB</p>
@@ -38,13 +33,9 @@
         <section class="welcome">
             <h1 class="welcome__title">Welcome ipsum dolor sit amet, consectetur adipiscing elit!</h1>
         </section>
-
-
-
-
         <section class="card-section">
             <div class="container">
-                <ul class="card-list list" id="active-card">
+                <ul class="card-list list active-card">
                     <li class="card-item">
                         <div class="wrapper">
                             <img src="./images/card/card_img1.svg" alt="header top image" width="368px" />
@@ -77,9 +68,11 @@
                                 <button class="card-btn__start">
                                     Get Started
                                 </button>
-                                <button class="card-btn__compare">
-                                    Compare plans
-                                </button>
+                                <a class="card-btn__link" href="#">
+                                    <button class="card-btn__compare list">
+                                        Compare plans
+                                    </button>
+                                </a>
                             </div>
 
                         </div>
@@ -117,9 +110,11 @@
                                 <button class="card-btn__start">
                                     Get Started
                                 </button>
-                                <button class="card-btn__compare">
-                                    Compare plans
-                                </button>
+                                <a class="card-btn__link" href="#">
+                                    <button class="card-btn__compare list">
+                                        Compare plans
+                                    </button>
+                                </a>
                             </div>
 
                         </div>
@@ -208,7 +203,7 @@
         </div>
 
     </div>
-    <script type="module" src="./js/modal.js"></script>
+    <script type="module" src="./js/index.js"></script>
 </body>
 
 </html>
