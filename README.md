@@ -3,7 +3,7 @@
 This project was created using Parcel. For introduction and setup additional
 features [refer to documentation](https://parceljs.org/).
 
-## Подготовка нового проекта
+## Preparing a new project
 
 1. Make sure that the LTS version of Node.js is installed on your computer.
    [Download and install](https://nodejs.org/en/) it if necessary.
